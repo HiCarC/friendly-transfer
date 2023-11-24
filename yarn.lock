@@ -507,9 +507,25 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@buildwithsygma/sygma-sdk-evm-to-evm-fungible-transfer-example@workspace:examples/evm-to-evm-fungible-transfer":
+"@buildwithsygma/sygma-sdk-evm-to-evm-fungible-transfer-example@workspace:examples/evm-to-evm-fungible-transfer-test":
   version: 0.0.0-use.local
-  resolution: "@buildwithsygma/sygma-sdk-evm-to-evm-fungible-transfer-example@workspace:examples/evm-to-evm-fungible-transfer"
+  resolution: "@buildwithsygma/sygma-sdk-evm-to-evm-fungible-transfer-example@workspace:examples/evm-to-evm-fungible-transfer-test"
+  dependencies:
+    "@buildwithsygma/sygma-sdk-core": "workspace:*"
+    dotenv: "npm:^16.3.1"
+    eslint: "npm:8"
+    eslint-config-prettier: "npm:8.3.0"
+    eslint-plugin-only-warn: "npm:1.0.3"
+    eslint-plugin-prettier: "npm:4.0.0"
+    ethers: "npm:5.6.2"
+    ts-node: "npm:10.9.1"
+    typescript: "npm:5.0.4"
+  languageName: unknown
+  linkType: soft
+
+"@buildwithsygma/sygma-sdk-evm-to-evm-fungible-transfer-text@workspace:examples/evm-to-evm-fungible-transfer":
+  version: 0.0.0-use.local
+  resolution: "@buildwithsygma/sygma-sdk-evm-to-evm-fungible-transfer-text@workspace:examples/evm-to-evm-fungible-transfer"
   dependencies:
     "@buildwithsygma/sygma-sdk-core": "workspace:*"
     dotenv: "npm:^16.3.1"
@@ -6717,7 +6733,7 @@ __metadata:
   dependencies:
     bn.js: "npm:^4.11.8"
     ethereumjs-util: "npm:^6.0.0"
-  checksum: 25d2e1e5505d7df0683028a1b46b4c07d78f08ef38d20a93a4dbe18616479d3c314b5572bdf258605d70e939ac3fc01c893a3d97a4113a5a195ec39bf6ec4777
+  checksum: dd1f7fad25f6c36fa34877176fdb10e21bfab5b88030fc427829f52686bcad3215168f55e5ed93689a1c34d0d802f39dec25b50ce1914da5b59c50d5975ae30e
   languageName: node
   linkType: hard
 

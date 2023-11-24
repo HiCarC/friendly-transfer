@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="overlap">
+          <img class="image" src="img/image-66.png" />
+          <img class="group" src="img/group-4.png" />
+          <a href="https://buildwithsygma.com/" target="_blank">
+            <img class="frame" src="img/frame-1.png" />
+          </a>
+          <div class="overlap-group-wrapper">
+            <button class="overlap-group" onclick="executeTransfer()">
+              <div class="text-wrapper">Transfer assets</div>
+            </button>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/@buildwithsygma" target="_blank">
+          <img class="img" src="img/frame.png" />
+        </a>
+        <a href="https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/evm-to-evm-fungible-transfer" target="_blank">
+          <img class="div-card-card" src="img/div-card-card-1ee8r.png" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      function executeTransfer() {
+        fetch('/transfer')
+          .then(response => response.text())
+          .then(message => {
+            alert(message);
+            console.log(message);
+          })
+          .catch(error => {
+            alert(`Error: ${error.message}`);
+            console.error('Error:', error);
+          });
+      }
+    </script>
+  </body>
+</html>

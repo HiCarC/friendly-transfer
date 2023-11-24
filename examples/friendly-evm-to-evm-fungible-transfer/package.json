@@ -17,7 +17,8 @@
     "ethereum"
   ],
   "scripts": {
-    "transfer": "ts-node src/transfer.ts"
+    "transfer": "ts-node src/transfer.ts",
+    "governance": "ts-node src/governance.ts"
   },
   "author": "Sygmaprotocol Product Team",
   "license": "LGPL-3.0-or-later",
